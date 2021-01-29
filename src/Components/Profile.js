@@ -169,7 +169,7 @@ const Profile = () => {
                         </div>
                     </div>
                     <div id="contact">
-                        <img src={contact} />
+                        <img src={contact} alt="contact"/>
                     </div>
                 </div>
                 <div className="trainer">
@@ -182,7 +182,7 @@ const Profile = () => {
                         </div>
                     </div>
                     <div id="contact">
-                        <img src={contact} />
+                        <img src={contact} alt="contact"/>
                     </div>
                 </div>
             </div>
