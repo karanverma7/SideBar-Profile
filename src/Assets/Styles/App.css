@@ -7,16 +7,15 @@ body {
     background-image: url(../Images/background.jpg);
     background-position: left;
     background-size: cover;
-    height: 100vh;
     display: flex;
     justify-content: space-between;
 }
 
 #profile {
-    background-color: rgba(255,255,255, 0.95);
+    background-color: rgb(248, 248, 248);
     width: 350px;
     height: 100%;
-    border-radius: 40px 0 60px 0;
+    border-radius: 40px 0 0 0;
 }
 
 #profile #userDetails, #profile #userDetails #user, #profile #userDetails #options {
@@ -83,12 +82,14 @@ body {
     margin-left: 20px;
     margin-top: 10px;
     color: rgb(82, 82, 82);
+    transform: scale(0.95);
 }
 
 #health #stats, #health #stats .unit {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    transform: scale(0.95);
 }
 
 #health #stats .unit {
@@ -153,3 +154,158 @@ body {
     transform: scale(0.95);
 }
 
+#trainings {
+    padding-bottom: 10px;
+    position: relative;
+    transform: scale(0.95);
+    overflow: hidden;
+}
+
+#trainings #slider {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -17px;
+    transition: all 0.7s ease-in-out;
+}
+
+#trainings .track {
+    min-width: 270px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    text-align: center;
+    background-color: rgba(0, 164, 170, 0.349);
+    padding-bottom: 14px;
+    margin: 0 40px;
+    margin-bottom: 10px;
+    border-radius: 25px 0 25px 0;
+    box-shadow: 2px 4px 3px rgba(0,0,0,0.6);
+    margin-top: 25px;
+    margin-left: 45px;
+}
+
+#trainings #controls {
+    position: absolute;
+    top: 90px;
+    z-index: 2;
+}
+
+#trainings #controls img {
+    height: 25px;
+    opacity: 50%;
+}
+
+#trainings #controls img:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+#trainings #controls #next {
+    position: absolute;
+    left: 330px;
+}
+
+#trainings #controls #previous {
+    position: absolute;
+    left: 16px;
+}
+
+#trainings .track .time {
+    color: black;
+    background-color: white;
+    padding: 3px 7px;
+    border-radius: 10px;
+    margin-top: -15px;
+    font-size: 11px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+    width: 50px;
+    transform: translateX(5px);
+}
+
+#trainings .track img {
+    height: 16px;
+    opacity: 70%;
+    transform: translateY(35px);
+    transition: transform 0.05s ease-in-out;
+}
+
+#trainings .track img:hover {
+    transform: translateY(33px);
+    filter: invert(30%);
+    cursor: pointer;
+}
+
+#trainings .track p {
+    margin-bottom: -17px;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+#trainings .track h4 {
+    margin-top: -20px;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+#trainers {
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 0 60px 0;
+    padding: 10px 0;
+}
+
+#trainers .trainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    transform: scale(0.95);
+}
+
+#trainers .trainer #details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+
+#trainers .trainer #details #status {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5px;
+    left: 60px;
+    background-color: rgb(0, 209, 0);
+}
+
+#trainers .trainer img {
+    height: 50px;
+    margin-left: 20px;
+
+}
+
+#trainers .trainer #contact img {
+    height: 25px;
+    padding: 5px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+#trainers .trainer #contact img:hover {
+    transform: scale(0.95);
+    opacity: 70%;
+    cursor: pointer;
+}
+
+#trainers .trainer #details h4 {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+#trainers .trainer #details p {
+    font-size: 11px;
+    margin-top: -15px;
+    margin-left: 10px;
+}
