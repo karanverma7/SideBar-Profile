@@ -186,28 +186,28 @@ body {
 
 #trainings #controls {
     position: absolute;
-    top: 90px;
+    top: 80px;
     z-index: 2;
-}
-
-#trainings #controls img {
-    height: 25px;
-    opacity: 50%;
-}
-
-#trainings #controls img:hover {
-    opacity: 80%;
-    cursor: pointer;
 }
 
 #trainings #controls #next {
     position: absolute;
-    left: 330px;
+    left: 328px;
+    color:rgb(160, 160, 160);
+    font-size: 30px;
+    cursor: pointer;
 }
 
 #trainings #controls #previous {
     position: absolute;
-    left: 16px;
+    cursor: pointer;
+    left: 12px;
+    color:rgb(160, 160, 160);
+    font-size: 30px;
+}
+
+#trainings #controls #previous:hover, #trainings #controls #next:hover {
+    color: rgb(66, 66, 66);
 }
 
 #trainings .track .time {

@@ -9,8 +9,6 @@ import signup from '../Assets/Images/signup.svg'
 import dots from '../Assets/Images/dots.svg'
 import trainer1 from '../Assets/Images/trainer1.svg'
 import trainer2 from '../Assets/Images/trainer2.svg'
-import next from '../Assets/Images/next.svg'
-import back from '../Assets/Images/back.svg'
 import contact from '../Assets/Images/contact.svg'
 
 
@@ -91,8 +89,8 @@ const Profile = () => {
             <div id="trainings">
                 <div id="title" style={{ transform: 'translateX(-4px)', marginBottom: '10px'}}>Today Trainings</div>
                 <div id="controls">
-                    <img id="previous" src={back} alt="previous" onClick={slideBack}/>
-                    <img id="next" src={next} alt="next" onClick={slideNext} />
+                    <div id="previous" onClick={slideBack}>&#60;</div>
+                    <div id="next" onClick={slideNext}>&#62;</div>
                 </div>
                 <div id="slider" ref={sliderRef}>
                     <div className="track">
